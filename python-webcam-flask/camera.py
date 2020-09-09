@@ -23,7 +23,6 @@ class Camera(object):
 
         # convert it to a pil image
         input_img = base64_to_pil_image(input_str)
-        print(np.array(input_img).shape)
         ################## where the hard work is done ############
         # output_img is an PIL image
         output_img = self.makeup_artist.apply_makeup(input_img)
